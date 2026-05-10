@@ -47,6 +47,10 @@ execution:
   - skill: "reply-drafting"
     step_type: "content"
     prompt: "draft-reply"
+    context:
+      voice_profile: ""
+      reply_tone: ""
+      reply_length: ""
   - skill: "draft-gate"
     step_type: "validation"
     prompt: "review-drafts"
