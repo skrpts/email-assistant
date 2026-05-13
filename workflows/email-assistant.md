@@ -48,9 +48,9 @@ execution:
     step_type: "content"
     prompt: "draft-reply"
     context:
-      voice_profile: ""
-      reply_tone: ""
-      reply_length: ""
+      voice_profile: "Neutral professional tone"
+      reply_tone: "Professional"
+      reply_length: "Concise"
   - skill: "draft-gate"
     step_type: "validation"
     prompt: "review-drafts"
