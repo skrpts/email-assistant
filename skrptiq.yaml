@@ -3,8 +3,8 @@ id: "49ec1574-4e62-4236-a7b9-9fe4cb14470d"
 name: "email-assistant"
 display_name: "Email Assistant"
 description: "Scans your inbox via Gmail MCP, categorises emails, drafts replies in your voice, and saves as Gmail drafts after human review"
-version: "1.0.4"
-engine: ">=1.0.0"
+version: "1.0.5"
+engine: ">=0.1.0"
 
 # --- Attribution ---
 author:
