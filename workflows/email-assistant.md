@@ -27,6 +27,7 @@ metadata:
 loops:
   - id: "reply-drafting"
     mode: "for_each"
+    inputExpression: "{{steps.Email Categorisation.output}}"
     steps:
       - "reply-drafting"
     maxIterations: 50
