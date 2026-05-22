@@ -3,7 +3,7 @@ id: "49ec1574-4e62-4236-a7b9-9fe4cb14470d"
 name: "email-assistant"
 display_name: "Email Assistant"
 description: "Scans your inbox via Gmail MCP, categorises emails, drafts replies in your voice, and saves as Gmail drafts after human review"
-version: "1.0.8"
+version: "1.0.11"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -17,11 +17,11 @@ repository: "https://github.com/skrpts/email-assistant"
 # --- Discovery (Hub) ---
 category: "shared"
 tags:
-  - "mcp"
-  - "gmail"
-  - "productivity"
-  - "email"
   - "daily"
+  - "email"
+  - "gmail"
+  - "mcp"
+  - "productivity"
 
 # --- Security & Access ---
 requires:
