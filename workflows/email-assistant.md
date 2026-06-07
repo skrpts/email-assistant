@@ -47,7 +47,7 @@ execution:
     prompt: "categorise-emails"
   - skill: "reply-drafting"
     step_type: "content"
-    prompt: "draft-reply"
+    prompt: "draft-reply-batch"
     context:
       voice_profile: "Neutral professional tone"
       reply_tone: "Professional"
