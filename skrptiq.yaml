@@ -3,7 +3,7 @@ id: "8dd844b6-3bab-4c18-ae07-520174fbb913"
 name: "email-assistant"
 display_name: "Email Assistant"
 description: "Scans your inbox via Gmail MCP, categorises emails, drafts replies in your voice, and saves as Gmail drafts after human review"
-version: "1.0.14"
+version: "1.0.15"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -54,3 +54,17 @@ contents:
   documents: 0
   assets: 0
   total: 11
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:02:06.350Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: ["pii"]
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/email-assistant/security"

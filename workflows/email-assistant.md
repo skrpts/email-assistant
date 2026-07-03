@@ -42,12 +42,15 @@ execution:
   - skill: "inbox-scan"
     step_type: "generation"
     prompt: "scan-inbox"
+    output: { name: "inbox_scan", type: "text" }
   - skill: "email-categorisation"
     step_type: "synthesis"
     prompt: "categorise-emails"
+    output: { name: "categories", type: "text" }
   - skill: "reply-drafting"
     step_type: "content"
     prompt: "draft-reply-batch"
+    output: { name: "draft_replies", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       reply_tone: "Professional"
@@ -55,9 +58,11 @@ execution:
   - skill: "draft-gate"
     step_type: "validation"
     prompt: "review-drafts"
+    output: { name: "gate_decision", type: "decision" }
   - skill: "draft-sending"
     step_type: "content"
     prompt: "send-drafts"
+    output: { name: "sent_confirmation", type: "text" }
 ---
 
 ## Overview
