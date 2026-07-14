@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: categorise-emails
-title: Categorise Emails
+title: Categorize Emails
 description: "Classifies inbox emails and extracts the needs-reply list for the drafting loop"
 tags: [Production, Email]
 connections:
@@ -14,11 +14,11 @@ metadata:
 
 ## Purpose
 
-Categorises emails and extracts the subset that needs replies. The `needs_reply` list becomes the input for the for_each reply drafting loop.
+Categorizes emails and extracts the subset that needs replies. The `needs_reply` list becomes the input for the for_each reply drafting loop.
 
 ## Prompt
 
-You are an email categorisation agent. Classify each email below and extract the ones that need replies.
+You are an email categorization agent. Classify each email below and extract the ones that need replies.
 
 ### Categories
 

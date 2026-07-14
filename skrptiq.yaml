@@ -2,8 +2,8 @@
 id: "8dd844b6-3bab-4c18-ae07-520174fbb913"
 name: "email-assistant"
 display_name: "Email Assistant"
-description: "Scans your inbox via Gmail MCP, categorises emails, drafts replies in your voice, and saves as Gmail drafts after human review"
-version: "1.0.15"
+description: "Scans your inbox via Gmail MCP, categorizes emails, drafts replies in your voice, and saves as Gmail drafts after human review"
+version: "1.0.16"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -33,6 +33,10 @@ dependencies:
     name: "llm-service"
     version: 1.0.1
     checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
+  - id: "2b9a3d32-a352-46ab-9241-96b256ca4237"
+    name: "gmail-mcp"
+    version: 1.0.0
+    checksum: "sha256:7d4fd65094639e5649cec9326f1327a299363387e32a27ec20d2bd24acd3d39f"
 
 requires:
   services:
@@ -49,20 +53,20 @@ contents:
   skills: 5
   prompts: 4
   workflows: 1
-  services: 1
+  services: 0
   sources: 0
   documents: 0
   assets: 0
-  total: 11
+  total: 10
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T15:55:27.294Z"
+  scanned_at: "2026-07-14T11:43:09.548Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
   detected:
-    services: ["llm-service"]
+    services: ["llm-service", "gmail-mcp"]
     permissions: []
     data_handling: ["pii"]
   undeclared: []

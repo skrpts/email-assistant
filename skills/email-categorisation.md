@@ -1,7 +1,7 @@
 ---
 type: skill
 id: email-categorisation
-title: Email Categorisation
+title: Email Categorization
 description: "Classifies inbox emails — needs reply, FYI, archive, or spam"
 tags: [Production, Email]
 connections:
@@ -11,7 +11,7 @@ connections:
 
 ## Capability
 
-Categorises each email and extracts the subset that needs replies. The "needs reply" list becomes the input for the for_each reply drafting loop.
+Categorizes each email and extracts the subset that needs replies. The "needs reply" list becomes the input for the for_each reply drafting loop.
 
 ## What It Does
 
@@ -24,4 +24,4 @@ For each "needs reply" email, extracts: what the sender wants, suggested reply p
 
 ## Outputs
 
-Categorised email set. The `needs_reply` list is structured for the for_each loop: each item contains the full email plus reply guidance.
+Categorized email set. The `needs_reply` list is structured for the for_each loop: each item contains the full email plus reply guidance.

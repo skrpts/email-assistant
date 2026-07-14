@@ -13,13 +13,13 @@ connections:
 
 ## Capability
 
-Searches the Gmail inbox for recent emails and retrieves their content for categorisation.
+Searches the Gmail inbox for recent emails and retrieves their content for categorization.
 
 ## What It Does
 
 1. **Search inbox** — calls `search_emails` with `in:inbox newer_than:{lookback}h`, limited to the configured max
 2. **Read content** — calls `read_email` for each result to get sender, subject, body, timestamp, and thread context
-3. **Structure output** — produces a list of emails ready for categorisation
+3. **Structure output** — produces a list of emails ready for categorization
 
 ## Outputs
 

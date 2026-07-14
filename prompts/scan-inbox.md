@@ -27,7 +27,7 @@ metadata:
 
 ## Purpose
 
-Fetches recent inbox emails for categorisation and reply drafting.
+Fetches recent inbox emails for categorization and reply drafting.
 
 ## Prompt
 

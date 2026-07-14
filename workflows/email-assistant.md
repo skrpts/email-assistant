@@ -2,7 +2,7 @@
 type: workflow
 id: email-assistant
 title: Email Assistant
-description: "Scans inbox via Gmail MCP, categorises emails, drafts replies in a for_each loop, gates for human review, then saves as Gmail drafts"
+description: "Scans inbox via Gmail MCP, categorizes emails, drafts replies in a for_each loop, gates for human review, then saves as Gmail drafts"
 tags: [Production, Email, Loop, Gate]
 connections:
   - target: inbox-scan
@@ -79,7 +79,7 @@ The **for_each loop** drafts one reply per email. The **gate step** ensures you 
 
 Using the Gmail MCP service, fetch recent inbox emails with full content, sender info, and thread context.
 
-### Stage 2: Email Categorisation
+### Stage 2: Email Categorization
 
 Classifies each email into four categories: needs reply, FYI, archive, or spam. Extracts the "needs reply" subset with guidance on what each sender wants.
 
@@ -126,7 +126,7 @@ Approved drafts are saved to Gmail using `draft_email`. They appear in your Gmai
 | Name | Description |
 |------|-------------|
 | Draft replies | Saved to Gmail Drafts folder, ready for review and sending |
-| Inbox summary | Categorised overview: needs reply, FYI, archive, spam counts |
+| Inbox summary | Categorized overview: needs reply, FYI, archive, spam counts |
 
 ## Setup
 
@@ -135,7 +135,7 @@ Approved drafts are saved to Gmail using `draft_email`. They appear in your Gmai
 
 ## Provider Notes
 
-- Categorisation is a single LLM call — fast on any model.
+- Categorization is a single LLM call — fast on any model.
 - Reply drafting runs once per email in the loop — token usage scales linearly with email count.
 - A model with strong writing capabilities produces better voice-matched replies.
 
