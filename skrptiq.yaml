@@ -3,7 +3,7 @@ id: "8dd844b6-3bab-4c18-ae07-520174fbb913"
 name: "email-assistant"
 display_name: "Email Assistant"
 description: "Scans your inbox via Gmail MCP, categorizes emails, drafts replies in your voice, and saves as Gmail drafts after human review"
-version: "1.0.16"
+version: "1.0.17"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -61,7 +61,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-14T11:43:09.548Z"
+  scanned_at: "2026-07-15T11:39:07.505Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

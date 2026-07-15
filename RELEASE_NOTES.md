@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.17
+GH#844 — migrate the gate step from node-meta (`metadata.gate: true` in the skill) to the canonical execution-entry `gate: true` on the workflow step. Single source of truth; the engine + app read the execution entry. No behaviour change — `IsGate` is identical.
+
 ## v1.0.16
 GH#833 — drop the embedded `gmail-mcp` service node; dep-reference `_shared/gmail-mcp@1.0.0`. contents.services 1→0.
 

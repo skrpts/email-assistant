@@ -57,6 +57,7 @@ execution:
       reply_length: "Concise"
   - skill: "draft-gate"
     step_type: "validation"
+    gate: true
     prompt: "review-drafts"
     output: { name: "gate_decision", type: "decision" }
   - skill: "draft-sending"
